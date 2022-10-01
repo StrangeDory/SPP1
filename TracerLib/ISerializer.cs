@@ -4,6 +4,6 @@ namespace TracerLib
 {
     interface ISerializer
     {
-        string Serialize(List<ThreadResult> value);
+        string Serialize(ITracer value);
     }
 }

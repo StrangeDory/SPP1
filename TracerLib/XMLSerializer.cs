@@ -6,13 +6,13 @@ namespace TracerLib
 {
     public class XmlCustomSerializer : ISerializer
     {
-        public string Serialize(List<ThreadResult> tracerResultList)
+        public string Serialize(ITracer tracer)
         {
             MemoryStream memoryStream = new MemoryStream();
 
-            var xmlSerializer = new XmlSerializer(typeof(List<ThreadResult>));
+            var xmlSerializer = new XmlSerializer(typeof(Tracer));
 
-            xmlSerializer.Serialize(memoryStream, tracerResultList);
+            xmlSerializer.Serialize(memoryStream, tracer);
             memoryStream.Position = 0;
 
             StreamReader sr = new StreamReader(memoryStream);

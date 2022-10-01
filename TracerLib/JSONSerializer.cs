@@ -5,9 +5,9 @@ namespace TracerLib
 {
     public class JsonCustomSerializer : ISerializer
     {
-        public string Serialize(List<ThreadResult> value)
+        public string Serialize(ITracer tracer)
         {
-            return JsonConvert.SerializeObject(value, Formatting.Indented);
+            return JsonConvert.SerializeObject(tracer.GetTraceResult(), Formatting.Indented);
         }
     }
 }
