@@ -1,2 +1,73 @@
 <?xml version="1.0"?>
-<Tracer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ThreadResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>1</id>
+  <time>619</time>
+  <Methods>
+    <MethodInfo>
+      <methodName>TestMethod1</methodName>
+      <className>TracerTest</className>
+      <time>619</time>
+      <Methods>
+        <MethodInfo>
+          <methodName>MethodFirst</methodName>
+          <className>Example</className>
+          <time>502</time>
+          <Methods />
+        </MethodInfo>
+      </Methods>
+    </MethodInfo>
+    <MethodInfo>
+      <methodName>TestMethod2</methodName>
+      <className>TracerTest</className>
+      <time>839</time>
+      <Methods>
+        <MethodInfo>
+          <methodName>MethodSecond</methodName>
+          <className>Example</className>
+          <time>617</time>
+          <Methods>
+            <MethodInfo>
+              <methodName>MethodFirst</methodName>
+              <className>Example</className>
+              <time>514</time>
+              <Methods />
+            </MethodInfo>
+          </Methods>
+        </MethodInfo>
+      </Methods>
+    </MethodInfo>
+    <MethodInfo>
+      <methodName>TestMethod3</methodName>
+      <className>TracerTest</className>
+      <time>1459</time>
+      <Methods>
+        <MethodInfo>
+          <methodName>MethodThird</methodName>
+          <className>Example</className>
+          <time>1135</time>
+          <Methods>
+            <MethodInfo>
+              <methodName>MethodFirst</methodName>
+              <className>Example</className>
+              <time>511</time>
+              <Methods />
+            </MethodInfo>
+            <MethodInfo>
+              <methodName>MethodSecond</methodName>
+              <className>Example</className>
+              <time>623</time>
+              <Methods>
+                <MethodInfo>
+                  <methodName>MethodFirst</methodName>
+                  <className>Example</className>
+                  <time>511</time>
+                  <Methods />
+                </MethodInfo>
+              </Methods>
+            </MethodInfo>
+          </Methods>
+        </MethodInfo>
+      </Methods>
+    </MethodInfo>
+  </Methods>
+</ThreadResult>

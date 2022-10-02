@@ -6,6 +6,7 @@ using System.Text;
 
 namespace TracerLib
 {
+    [Serializable]
     public class MethodInfo
     {
         private readonly Stopwatch stopwatch;
@@ -14,9 +15,7 @@ namespace TracerLib
         public long time;
         public List<MethodInfo> Methods { get; }
 
-        public MethodInfo()
-        {
-        }
+        public MethodInfo() {}
 
         public MethodInfo(MethodBase methodBase)
         {

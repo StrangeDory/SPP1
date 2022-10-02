@@ -13,6 +13,6 @@ namespace TracerLib
         void StopTrace();
 
         // получить результаты измерений
-        TraceResult GetTraceResult();
+        ThreadResult GetTraceResult();
     }
 }

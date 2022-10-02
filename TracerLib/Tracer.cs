@@ -1,15 +1,17 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Reflection;
 
 namespace TracerLib
 {
+    [Serializable]
     public class Tracer : ITracer
     {
-        private TraceResult TraceResult;
+        private ThreadResult TraceResult;
 
         public Tracer()
         {
-            TraceResult = new TraceResult();
+            TraceResult = new ThreadResult();
         }
 
         public void StartTrace()
@@ -25,7 +27,7 @@ namespace TracerLib
             TraceResult.StopMethodTrace();
         }
 
-        public TraceResult GetTraceResult()
+        public ThreadResult GetTraceResult()
         {
             return TraceResult;
         }

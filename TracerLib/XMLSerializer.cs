@@ -10,9 +10,9 @@ namespace TracerLib
         {
             MemoryStream memoryStream = new MemoryStream();
 
-            var xmlSerializer = new XmlSerializer(typeof(Tracer));
+            var xmlSerializer = new XmlSerializer(typeof(ThreadResult));
 
-            xmlSerializer.Serialize(memoryStream, tracer);
+            xmlSerializer.Serialize(memoryStream, tracer.GetTraceResult());
             memoryStream.Position = 0;
 
             StreamReader sr = new StreamReader(memoryStream);

@@ -1,9 +1,11 @@
-﻿using System.Collections.Concurrent;
+﻿using System;
+using System.Collections.Concurrent;
 using System.Reflection;
 using System.Threading;
 
 namespace TracerLib
 {
+    [Serializable]
     public class TraceResult
     {
         public ConcurrentDictionary<int, ThreadResult> ThreadResults { get; }
